@@ -7,7 +7,7 @@
 <%- include('../partials/header') %>
  
     <section>
-      <form action="" class="row" method="POST">
+      <form action="/usuarios/actualizar?_method=PUT " class="row" method="POST">
       <div class="formulario">
         <h1>Perfil de usuario</h1>
         <h2>Datos personales</h2>
@@ -49,7 +49,7 @@
         <div class="campo">
           <label for="province">Provincia</label>
           <input type="province" name="province" class="form-control" id="province" placeholder="*Provincia"/>
-          <small style="color: red;"  class="text-danger "><%= locals.errors && errors.password ? errors.password.msg : null %></small>
+          <small style="color: red;"  class="text-danger "><%= locals.errors && errors.province ? errors.province.msg : null %></small>
         
         </div>
     
